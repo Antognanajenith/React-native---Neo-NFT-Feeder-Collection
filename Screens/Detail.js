@@ -3,7 +3,7 @@ import { StyleSheet, Text, View,ImageBackground } from 'react-native';
 
 const Detail = () => {
   return (
-    <Text>Home from and to </Text>
+    <Text>detail from and to </Text>
   )
 }
 

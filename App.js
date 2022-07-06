@@ -1,7 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer,DefaultTheme } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
+
+
 
 import Home from "./Screens/Home";
 import Details from './Screens/Detail';
@@ -18,6 +19,17 @@ const Themez1 = {
   }
 }
 export default function App() {
+
+  // const [loaded] = useFonts({
+  //   "montserrat": require("./assets/fonts/Montserrat-Regular.ttf"),
+  //   "montserratlight": require("./assets/fonts/montserratlight.ttf"),
+  //   "montserratbold": require("./assets/fonts/Montserrat-Bold.ttf"),
+  //   "montserratthin": require("./assets/fonts/Montserrat-Thin.ttf"),
+  //   "montserratitalic": require("./assets/fonts/Montserrat-Italic.ttf"),
+  // });
+
+//  if (!loaded) return null;
+
   return (
   <NavigationContainer theme={Themez1}>
     <Stack.Navigator screenOptions={{headerShown:false}}
